@@ -91,5 +91,20 @@ body {
 
 .new-row-table {
     display: flex;
+    padding: 20px;
     flex-direction: column;
+    width: 95%;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0 auto auto auto;
+}
+
+.row-right-buttom {
+    justify-content: right;
+    text-align: end;
+}
+
+.line-bottom {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px;
+
 }
