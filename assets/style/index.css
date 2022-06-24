@@ -1,0 +1,78 @@
+body {
+    margin: 0%;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    height: 10%;
+    width: 100%;
+}
+
+#div-image {
+    margin-left: 15px;
+}
+
+#logo-ufpa {
+    width: 100%;
+    height: 100%;
+}
+
+#div-header-left {
+    width: 100%;
+}
+
+.title {
+    margin: 0 0 0 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#div-header-right {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#div-aluno {
+    width: 100%;
+    text-align: right;
+}
+
+#div-config {
+    width: 100%;
+    text-align: right;
+}
+
+.sub-header {
+    width: 100%;
+    height: 25%;
+    background-color: aqua;
+}
+
+.table {
+    width: 90%;
+    height: 80%;
+    margin: -11% auto auto auto;
+    display: flex;
+    flex-direction: column;
+    z-index: +1;
+}
+
+.header-table {
+    margin: 0;
+    width: 100%;
+}
+
+.content-table {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
