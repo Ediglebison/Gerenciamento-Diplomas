@@ -6,13 +6,25 @@ body {
 .header {
     display: flex;
     flex-direction: row;
-    background-color: blue;
+    background-color: #0069b4;
     height: 10%;
     width: 100%;
 }
 
+.div-header-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
 #div-image {
+    display: flex;
+    flex-direction: row;
     margin-left: 15px;
+    width: 10%;
+    height: 100%;
 }
 
 #logo-ufpa {
@@ -20,7 +32,7 @@ body {
     height: 100%;
 }
 
-#div-header-left {
+#div-header-title {
     width: 100%;
 }
 
@@ -46,14 +58,17 @@ body {
 }
 
 #div-config {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    text-align: right;
+    justify-content: right;
+    align-items: center;
 }
 
 .sub-header {
     width: 100%;
     height: 25%;
-    background-color: aqua;
+    background-color: #269de7;
 }
 
 .table {
@@ -99,7 +114,7 @@ body {
     margin: 0 auto auto auto;
 }
 
-.row-right-buttom {
+.right-button {
     justify-content: right;
     text-align: end;
 }

@@ -15,18 +15,20 @@
 <body>
     <!-- HEADER -->
     <div class="header">
-        <div id="div-image">
-            <img id="logo-ufpa" src="./assets/UFPA.png" alt="UFPA">
-        </div>
-        <div id="div-header-left">
-            <h1 class="title">Gerência de Diplomas UFPA</h1>
-        </div>
-        <div id="div-header-right">
-            <div id="div-aluno">
-                <h1>Aluno</h1>
+
+        <a href="./index.html" class="div-header-left">
+            <div id="div-image">
+                <img id="logo-ufpa" src="./assets/UFPA.png" alt="UFPA">
             </div>
+            <div id="div-header-title">
+                <h1 class="title">Gerência de Diplomas UFPA</h1>
+            </div>
+        </a>
+
+
+        <div id="div-header-right">
             <div id="div-config">
-                <h1>Configurações</h1>
+                <a href="./cadAluno.html">Cadastrar Alunos</a>
             </div>
         </div>
     </div>
@@ -42,12 +44,6 @@
         </div>
 
         <div class="content-table">
-
-            <div class="row-table row-right-buttom">
-                <div class="item-table">
-                    <button>Cadastrar</button>
-                </div>
-            </div>
             <div class="row-table">
                 <div class="item-table">
                     <label>NOME</label>
@@ -65,12 +61,8 @@
                     <label>STATUS</label>
                     <input type="text">
                 </div>
-            </div>
-
-            <div class="row-table">
-                <div class="item-table">
-                    <label>PESQUISAR ALUNO</label>
-                    <input type="text">
+                <div class="item-table right-button">
+                    <button>Pesquisar</button>
                 </div>
             </div>
 
