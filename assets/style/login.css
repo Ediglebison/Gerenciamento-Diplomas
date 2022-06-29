@@ -5,8 +5,8 @@
 }
 
 :root {
-  --hue: 170;
-  --primary-color: hsl(var(--hue), 100%, 26%);
+  --hue: 205;
+  --primary-color: hsl(var(--hue), 100%, 35%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
 
@@ -16,7 +16,7 @@
 
   --brand-dark: hsl(var(--hue), 100%, 14%);
 
-  --bg-light: hsl(180, 14%, 97%);
+  --bg-light: hsl(calc(var(--hue) - 3), 100%, 61%);
 
   font-size: 62.5%;
 
@@ -35,33 +35,35 @@ body {
 }
 
 body {
-  font-family: "DM Sans";
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
 
   text-align: center;
 
   overflow: overlay;
 
-  background-color: var(--bg-light);
+  background: linear-gradient(90.06deg, var(--bg-light), 28.29%, var(--primary-color));
 }
 
 section header h4 {
-  font-size: 1.4rem;
+  font-size: 2.64rem;
+  line-height: 2.6rem;
+
+  margin-bottom: 2.2rem;
+  margin-top: 1.8rem;
+  margin-inline: 1.3rem;
+  
+  width: 32rem;
+  margin-inline: auto;
   font-weight: 700;
-  line-height: 150%;
-  letter-spacing: 0.08em;
-  color: var(--primary-color);
-
-  text-transform: uppercase;
-
-  margin-bottom: 1.6rem;
+  color: white;
 }
 
 section header h2 {
   font-size: 3rem;
   line-height: 3.9rem;
-
-  color: var(--headline);
 }
 
 .wrapper {
@@ -103,17 +105,62 @@ img {
   }
 
   .col-a img {
-    width: 50rem;
+    width: 52.4rem;
+    height: 34rem;
   }
 
   .col-b img {
-    width: 15rem;
+    width: 10.5rem;
+    height: 12.1rem;
+  }
+
+  #header .top-header {
+    background-color: var(--primary-color);
+    height: 7.2rem;
+    width: 140%;
+    margin-bottom: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   #login h2 {
-    width: 47rem;
     margin-inline: auto;
-    text-transform: uppercase;
+    margin-top: 3.6rem;
+
+    width: 49.3rem;
+    height: 8.1rem;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.81rem;
+    line-height: 5.8rem;
+    text-align: center;
+
+    color: white;
+  }
+
+  #login .line{
+    height: 0;
+    
+    border: 1px solid;
+    color: white;
+    width: 100%;
+  }
+
+  #login h4 {
+    font-size: 2.64rem;
+    line-height: 2.6rem;
+  
+    margin-bottom: 2.2rem;
+    margin-top: 1.8rem;
+    margin-inline: 1.3rem;
+    
+    width: 32rem;
+    margin-inline: auto;
+    font-weight: 700;
+    color: white;
+
   }
 
   #login .wrapper {
@@ -125,7 +172,57 @@ img {
   }
 
   #login .col-a {
-    text-align: left;
     align-self: center;
+  }
+
+  #login .col-b {
+    background-color: var(--primary-color);
+    width: 34.6rem;
+    height: 44.8rem;
+    margin-left: 19.3rem;
+  }
+
+  #login form [type=submit] {
+    width: 9.2rem;
+    height: 3.5rem;
+
+    background-color: var(--bg-light);
+    border: none;
+    border-radius: 0.3rem;
+  }
+
+
+  #login form {
+    text-align: left;
+    margin-left: 7rem;
+    margin-top: 1.5rem;
+  }
+
+  #login form label{
+    font-size: 1.9rem;
+    line-height: 1.9rem;
+  }
+
+  #login form input {
+    width: 20.6rem;
+    height: 3.5rem;
+    border-radius: 0.3rem;
+  }
+
+  #login form input[type=submit] {
+    width: 9.2rem;
+    height: 3.2rem;
+
+    border-top: 14rem;
+    border-left: 12.8rem;
+    
+
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
   }
 }

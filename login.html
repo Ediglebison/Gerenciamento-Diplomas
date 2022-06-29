@@ -13,30 +13,41 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap" rel="stylesheet">
     
     <title>Login</title>
   </head>
   <body>
+    <section id="header">
+      <div class="top-header">
+
+      </div>
+    </section>
     <section id="login">
       <header>
         <h2>Gerência de Diplomas UFPA</h2>
       </header>
+      <div class="line">
+
+      </div>
       <div class="wrapper">
         <div class="col-a">
-          <img src="./assets/alunos-felizes-comemorando-a-formatura.jpg" alt="alunos felizes comemorando a formatura" />
+          <img src="./assets/alunos-felizes-comemorando-a-formatura.png" alt="alunos felizes comemorando a formatura" />
         </div>
         <div class="col-b">
           <header>
-            <h4>Preencha seu usuário e senha para acessar!</h4>
+            <h4>Preencha seu usuário para acessar!</h4>
           </header>
           <img src="./assets/UFPA.png" alt="logo UFPA" />
           <div class="content">
             <form action="">
-              <label>Usuário:</label>
+              <label for="login">Usuário:</label><br>
               <input type="text" id="login" name="login" /><br /><br />
-              <label>Senha:</label>
+              <label for="senha">Senha:</label><br>
               <input type="password" id="senha" name="senha" /><br /><br />
-              <input type="submit" value="Acessar" />
+              <input type="submit" value="Acessar" class="access" />
             </form>
           </div>
         </div>
