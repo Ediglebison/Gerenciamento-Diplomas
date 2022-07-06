@@ -69,6 +69,68 @@ img {
   max-width: 100%;
 }
 
+#login .col-b{
+  background-color: var(--primary-color);
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+#login img{
+  width: 100%;
+}
+
+#login .col-a img {
+  width: 0;
+}
+
+#login .col-b img {
+  width: 10.5rem;
+}
+
+
+#login form [type=submit] {
+  width: 9.2rem;
+  height: 3.5rem;
+
+  background-color: var(--bg-light);
+  border: none;
+  border-radius: 0.3rem;
+}
+
+
+#login form {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+#login form label{
+  font-size: 1.9rem;
+  line-height: 1.9rem;
+}
+
+#login form input {
+  width: 20.6rem;
+  height: 3.5rem;
+  border-radius: 0.3rem;
+}
+
+#login form input[type=submit] {
+  width: 9.2rem;
+  height: 3.2rem;
+
+  border-top: 14rem;
+  border-left: 12.8rem;
+  
+
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+
 @media (min-width: 1024px) {
   /*=====GERAL=====*/
   body {
