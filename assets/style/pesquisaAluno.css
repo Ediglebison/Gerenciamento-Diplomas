@@ -1,0 +1,211 @@
+body {
+    margin: 0%;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #0069b4;
+    height: 10%;
+    width: 100%;
+}
+
+.div-header-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+#div-config {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.linkHeader {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-transform: none;
+    color: whitesmoke;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 900;
+    margin: auto 10% auto 10%;
+}
+
+#div-image {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    width: 10%;
+    height: 100%;
+}
+
+#logo-ufpa {
+    width: 100%;
+    height: 100%;
+}
+
+#div-header-title {
+    width: 100%;
+}
+
+.title {
+    margin: 0 0 0 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#div-header-right {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: right;
+    text-align: right;
+}
+
+#div-aluno {
+    width: 100%;
+    text-align: right;
+}
+
+.sub-header {
+    width: 100%;
+    height: 25%;
+    background-color: #269de7;
+}
+
+.table {
+    width: 90%;
+    height: 80%;
+    margin: -11% auto auto auto;
+    display: flex;
+    flex-direction: column;
+    z-index: +1;
+}
+
+.header-table {
+    margin: 0;
+    width: 100%;
+}
+
+.content-table {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-table {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.item-table {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.divLabelPesquisa {
+    margin: 3%;
+    margin: 10px;
+}
+
+.labelAluno {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    opacity: 50%;
+}
+
+input {
+    border-style: hidden hidden solid hidden;
+    border-width: 1px;
+    opacity: 50%;
+    width: 100%;
+}
+
+.new-row-table {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    width: 95%;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 0 auto auto auto;
+    align-items: center;
+}
+
+.row-pesquisa {
+    margin: 2%;
+}
+
+.row-item-table {
+    height: 100px;
+}
+
+.divButton {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonPesquisa {
+    width: 194px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0px;
+    background-color: #00BD51;
+    font-family: 'PT Sans', sans-serif;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 100%;
+}
+
+.line-bottom {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px;
+
+}
+
+.foto-aluno {
+    width: 20%;
+    border-radius: 50%;
+    margin-right: 5%;
+}
+
+.nome-foto {
+    width: 100%;
+    justify-content: left;
+}
+
+.status {
+    background-color: #00BD51;
+    padding: 5% 10% 5% 10%;
+    border-radius: 8px;
+    color: whitesmoke;
+    opacity: 100%;
+}
+
+.divLabelAluno {
+    margin-left: 15px;
+    margin-right: 15px;
+}
