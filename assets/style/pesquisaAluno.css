@@ -1,110 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --hue: 205;
+  --primary-color: hsl(var(--hue), 100%, 35%);
+  --bg-light: hsl(calc(var(--hue) - 3), 100%, 61%);
+
+  font-size: 62.5%;
+}
+
+html {
+  /* chrome://flags/#smooth-scrolling */
+  scroll-behavior: smooth;
+}
+
+html,
 body {
-    margin: 0%;
-    height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
-    background-color: #0069b4;
-    height: 10%;
-    width: 100%;
+body {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  text-align: center;
+
+  overflow: overlay;
+  background: linear-gradient(
+    90.06deg,
+    var(--bg-light),
+    28.29%,
+    var(--primary-color)
+  );
+  background-size: auto 30rem;
 }
 
-.div-header-left {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
+ul {
+  list-style: none;
 }
 
-#div-config {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+img {
+  max-width: 100%;
 }
 
-.linkHeader {
-    display: flex;
-    text-align: center;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    text-transform: none;
-    color: whitesmoke;
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 900;
-    margin: auto 10% auto 10%;
+#header.top-header {
+  background-color: var(--primary-color);
+  height: 7.2rem;
+  width: 140%;
+  margin-bottom: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: baseline;
 }
 
-#div-image {
-    display: flex;
-    flex-direction: row;
-    margin-left: 15px;
-    width: 10%;
-    height: 100%;
+#header.top-header img {
+  height: 5.4rem;
 }
 
-#logo-ufpa {
-    width: 100%;
-    height: 100%;
+#header.top-header ul {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
 }
 
-#div-header-title {
-    width: 100%;
+#header.top-header ul img {
+  width: 2.4rem;
+  height: auto;
 }
 
-.title {
-    margin: 0 0 0 20px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    font-family: 'PT Sans', sans-serif;
+#header .h-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 4.3rem;
+  margin-top: 0.4rem;
+
+  text-decoration: none;
 }
 
-#div-header-right {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: right;
-    text-align: right;
+#header .h-content a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
 }
 
-#div-aluno {
-    width: 100%;
-    text-align: right;
+#header .h-content h2 {
+  width: 31.2rem;
+  font-weight: 700;
+  font-size: 3.87rem;
+  line-height: 3.8rem;
+}
+
+#header .h-content ul li {
+  font-weight: 700;
+  font-size: 2.7rem;
+  line-height: 2.7rem;
+  text-align: center;
 }
 
 .sub-header {
-    width: 100%;
-    height: 25%;
-    background-color: #269de7;
+  width: 140%;
+  height: 25rem;
+  background: linear-gradient(
+    90.06deg,
+    var(--bg-light),
+    28.29%,
+    var(--primary-color)
+  );
+  z-index: -1;
+  position: fixed;
+  left: 0;
+}
+
+h3.titulo {
+  width: 30.5rem;
+  height: 2.8rem;
+
+  margin-left: 3rem;
+
+  margin-top: 7.2rem;
+  padding-top: 0.5rem;
+  color: white;
+
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 3.7rem;
+}
+
+h3.titulo img {
+  width: 3.2rem;
 }
 
 .table {
-    width: 90%;
-    height: 80%;
-    margin: -11% auto auto auto;
-    display: flex;
-    flex-direction: column;
-    z-index: +1;
-}
-
-.header-table {
-    margin: 0;
-    width: 100%;
+  margin-top: 3rem;
+  padding-block: 3rem;
+  padding-inline: 3rem;
+  align-self: center;
 }
 
 .content-table {
-    margin: 0;
-    width: 100%;
-    height: 100%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -126,11 +168,10 @@ body {
 
 .divLabelPesquisa {
     margin: 3%;
-    margin: 10px;
+    margin: 1rem;
 }
 
 .labelAluno {
-    font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     opacity: 50%;
 }
@@ -144,73 +185,75 @@ input {
 
 .new-row-table {
     display: flex;
-    padding: 20px;
+    padding: 2rem;
     flex-direction: column;
     width: 95%;
     border-radius: 2px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 0 auto auto auto;
     align-items: center;
+    border-top: solid 2px gray;
 }
 
 .row-pesquisa {
-    margin: 2%;
+  margin: 2%;
 }
 
 .row-item-table {
-    height: 100px;
+  height: 10rem;
 }
 
 .divButton {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .buttonPesquisa {
-    width: 194px;
-    height: 30px;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 0px;
-    background-color: #00BD51;
-    font-family: 'PT Sans', sans-serif;
-    color: whitesmoke;
-    font-weight: 700;
-    font-size: 100%;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 0px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  background-color: hsl(146, 100%, 37%);
+  color: white;
+  font-weight: 700;
 }
 
 .line-bottom {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px;
-
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 1px;
 }
 
 .foto-aluno {
-    width: 20%;
-    border-radius: 50%;
-    margin-right: 5%;
+  width: 20%;
+  border-radius: 50%;
+  margin-right: 15%;
+
 }
 
 .nome-foto {
-    width: 100%;
-    justify-content: left;
+  width: 100%;
+  justify-content: left;
+  margin-left: 3rem;
+  
 }
 
 .status {
-    background-color: #00BD51;
-    padding: 5% 10% 5% 10%;
-    border-radius: 8px;
-    color: whitesmoke;
-    opacity: 100%;
+  background-color:  hsl(146, 100%, 37%);
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  color: whitesmoke;
+  opacity: 100%;
+}
+
+.acoes img {
+    width: 3rem;
+    height: auto;
 }
 
 .divLabelAluno {
-    margin-left: 15px;
-    margin-right: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-.titlePage {
-    font-family: 'PT Sans', sans-serif;
-    color: whitesmoke;
-}

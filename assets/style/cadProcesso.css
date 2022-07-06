@@ -28,8 +28,6 @@ body {
     font-size: 1.6rem;
     font-weight: 700;
 
-    text-align: center;
-
     overflow: overlay;
 
     background: linear-gradient(90.06deg, var(--bg-light), 28.29%, var(--primary-color));
@@ -285,81 +283,95 @@ img {
         font-size: 2.2rem;
         line-height: 2.2rem;
     }
-}
 
-.titulo {
-    color: white;
-}
+    .titulo {
+        color: white;
+    }
+    
+    .table {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .row-table {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .item-table {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .row-item-table {
+        height: 10rem;
+    }
+    
+    .line-bottom {
+        width: 100%;
+    }
+    
+    .labelAluno {
+        font-weight: 700;
+    }
+    
+    .item-cad{
+        opacity: 50%;
+    }
+    
+    .foto-aluno {
+        width: 10rem;
+        border-radius: 50%;
+    }
+    
+    .nome-foto {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
 
-.table {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-}
+    .status {
+        background-color:  hsl(146, 100%, 37%);
+        padding: 0.7rem;
+        border-radius: 0.3rem;
+        color: whitesmoke;
+        opacity: 100%;
+    }
 
-.row-table {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
+    .acoes img {
+        width: 3rem;
+    }
+    
+    input, select {
+        border-style: hidden hidden solid hidden;
+        border-width: 1px;
+        opacity: 50%;
+        width: 27rem;
+        background-color: whitesmoke;
+    }
+    
+    button {
+        width: 16.2rem;
+        height: 3.7rem;
 
-.item-table {
-    display: flex;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
+        font-family: 'Yanone Kaffeesatz';
+        text-align: center;
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 2.2rem;
 
-.row-item-table {
-    height: 100px;
-}
+        background-color: hsl(146, 100%, 37%);
 
-.line-bottom {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px;
-    width: 100%;
-}
+        border: none;
+        border-radius: 0.3rem;
 
-.labelAluno {
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 700;
-    opacity: 50%;
-}
-
-.foto-aluno {
-    width: 20%;
-    border-radius: 50%;
-}
-
-.nome-foto {
-    width: 100%;
-    justify-content: center;
-    gap: 20px;
-}
-
-input {
-    border-style: hidden hidden solid hidden;
-    border-width: 1px;
-    opacity: 50%;
-    width: 100%;
-    background-color: whitesmoke;
-}
-
-.item-cad {
-    width: 100%;
-}
-
-button {
-    width: 246px;
-    height: 47px;
-    left: 1050px;
-    top: 598px;
-
-    background: #00BD51;
-    border-radius: 3px;
-
-    color: whitesmoke;
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 700;
+        align-items: center;
+    }
 }

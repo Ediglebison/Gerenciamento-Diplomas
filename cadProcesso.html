@@ -46,9 +46,12 @@
             </ul>
         </div>
     </header>
+
     <h3 class="titulo">
+        <img src="https://s3-alpha-sig.figma.com/img/1ff4/d9e2/5e4c95f4819ed4e42a01932815470d3e?Expires=1658102400&Signature=FnT~ml-ffY2SHcFqvbWxp4mvrnBgieFbxC82eEI1vgrBdk5JycRagEJA34DD09apcXOjtg~kO6r1e4q0JbwRw3adVREfv2SzVERQhL5RMDjQDriLvHLimeOABZXMhPyS24N1e1VTCObTlOya7lQT2gTd0KTbKKxtSfLO0fXKj1moYGCYMwEWU~sRrUfer5G0sbXL1oZUG9X-IRc5ROrKwJcBzsJqAy~8SvYybMy1yjDwZ5w8e0KNNE6UYj2cfIrC1J8MROOB6ew8ZskHEYg6WFZOV6dqqJ1nLuC~eUCoj9fb9A0QZAgteQucknO4cwWmGqfngQZZRvs5qxfZYj6VTQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
         Cadastrar Processo
     </h3>
+
     <div class="content">
         <div class="table">
 
@@ -85,33 +88,56 @@
                     <label class="labelAluno status">Ativo</label>
                 </div>
                 <div class="item-table">
-                    <label class="labelAluno">Ações</label>
+                    <label class="labelAluno acoes">
+                        <a href="">
+                            <img src="https://s3-alpha-sig.figma.com/img/5f08/caa7/2eba556500b31b5249efea299bfc729b?Expires=1658102400&Signature=K5NgrGfZ3ekR49kixrTtBqabB9eqnS7AJLhqhIAkABbn3rMPd2A6xUQ~u48LML~SyG~XrqU3kiKe5Z-kZchIU~f-2AMXLB4VeTvAHPiHsNd~SbjbUJuSOA2EW1eLRHqokD3cYoT~goxNcH7zqdUAL2lwMScUbVCBhzruO2ZYoiAgp6puUNS8Rj~3~kWmqJl0tQrSXoHPPvvh26rvNQe60-9xUbjOcTRO5msP4G2S4OvWcD9jHvg9fk~ZrfhQp59VgJAOsUuOZns7MqScRhnoAerARvYW-631rFGmRTo3Yu9noTgFqTRMT-kdhTl-peM~V6r1wUIH5L9blk98gZZ~3Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
+                        </a>
+                    </label>
                 </div>
             </div>
 
             <div class="row-table row-item-table">
                 <div class="item-table">
-                    <label class="labelAluno item-cad">Matrícula SIGAA</label class="labelAluno">
-                    <input type="text">
+                    <p>
+                        <label class="labelAluno item-cad">Matrícula SIGAA:</label class="labelAluno"><br>
+                        <input type="number">
+                    </p>
                 </div>
                 <div class="item-table">
-                    <label class="labelAluno item-cad">Data/Número da Defesa</label class="labelAluno">
-                    <input type="text">
+                    <p>
+                        <label class="labelAluno item-cad">Data/Número da Defesa:</label class="labelAluno"><br>
+                        <input type="date">
+                    </p>
                 </div>
                 <div class="item-table">
-                    <label class="labelAluno item-cad">Status do Diploma</label class="labelAluno">
-                    <input type="text">
+                    <p>
+                        <label class="labelAluno item-cad">Status do Diploma:</label class="labelAluno"><br />
+                            <select name="status">
+                                <option value=""></option>
+                                <option value="ativo">Ativo</option>
+                                <option value="inativo">Inativo</option>
+                                <option value="concluido">Concluido</option>
+                            </select>
+                        </p>
                 </div>
             </div>
 
             <div class="row-table row-item-table">
                 <div class="item-table">
-                    <label class="labelAluno item-cad">Status do Diploma</label class="labelAluno">
-                    <input type="text">
+                    <p>
+                        <label class="labelAluno item-cad">Número de protocolo so SIPAC:</label class="labelAluno"><br>
+                        <input type="number">
+                    </p>
                 </div>
                 <div class="item-table">
-                    <label class="labelAluno item-cad">Status do Diploma</label class="labelAluno">
-                    <input type="text">
+                    <p>
+                        <label class="labelAluno item-cad">Enviado para biblioteca:</label class="labelAluno"><br>
+                            <select name="envBiblioteca">
+                                <option value=""></option>
+                                <option value="ativo">Sin</option>
+                                <option value="inativo">Não</option>
+                            </select>
+                    </p>
                 </div>
                 <div class="item-table">
                     <button>Cadastrar</button>
