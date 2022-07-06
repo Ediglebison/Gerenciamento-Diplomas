@@ -209,3 +209,8 @@ input {
     margin-left: 15px;
     margin-right: 15px;
 }
+
+.titlePage {
+    font-family: 'PT Sans', sans-serif;
+    color: whitesmoke;
+}
