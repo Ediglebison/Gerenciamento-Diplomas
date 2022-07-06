@@ -5,11 +5,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/cadAluno.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Cadastrar Aluno</title>
 </head>
 
 <body>
-    <h1>oi</h1>
+    <header id="header" class="top-header">
+        <div class="h-content">
+            <a href="#" >
+                <img src="./assets/UFPA.png" alt="Logo da UFPA" />
+                <h2>Gerência de Diplomas UFPA</h2>
+            </a>
+            <ul>
+                <li>
+                    <a href="./cadAluno.html">
+                        <img src="https://s3-alpha-sig.figma.com/img/68e2/d011/f281a0f0b524119053e99abfa567b9f2?Expires=1658102400&Signature=dkwj9PDVxbKHwwRevYrHsKoCE7a1IF2g1WrvGU-MAeuf8~z9LMw4VHDfkmQeVOiBg-ziRR~bDEc-Yo2svd2yZ1sYsQFCZx-MMq1Q7IwiuGNJJKYC5bB3VsHvsLnSq-Kq~XzO5pKs6yvKhNdZap8rYHLZ~Tmw6CukqekTUZXFzMneNfyqCGSRkzHsOlndi6ujDf4Fd24sdXerwCve74rM3nDHUMkZJvIws9KFprqgWjthgYx4s06VlAhN51KEH6R4E3wbn68qcBOsdGDcRifJZbrk8mMaeqLMQgkimWEQPWmrSTv4ZFC23nqWimr0HJlZ22ovz6ENFHSMHHb884gYlw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
+                        Cadastrar Alunos                        
+                    </a>
+                </li>
+                <li>
+                    <a href="./pesquisaAluno.html">
+                        <img src="https://s3-alpha-sig.figma.com/img/1ff4/d9e2/5e4c95f4819ed4e42a01932815470d3e?Expires=1658102400&Signature=FnT~ml-ffY2SHcFqvbWxp4mvrnBgieFbxC82eEI1vgrBdk5JycRagEJA34DD09apcXOjtg~kO6r1e4q0JbwRw3adVREfv2SzVERQhL5RMDjQDriLvHLimeOABZXMhPyS24N1e1VTCObTlOya7lQT2gTd0KTbKKxtSfLO0fXKj1moYGCYMwEWU~sRrUfer5G0sbXL1oZUG9X-IRc5ROrKwJcBzsJqAy~8SvYybMy1yjDwZ5w8e0KNNE6UYj2cfIrC1J8MROOB6ew8ZskHEYg6WFZOV6dqqJ1nLuC~eUCoj9fb9A0QZAgteQucknO4cwWmGqfngQZZRvs5qxfZYj6VTQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
+                        Alunos                        
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://s3-alpha-sig.figma.com/img/2cb8/01f7/e43c8aeb01671a1b4c770f0fcad1adbe?Expires=1658102400&Signature=FNotkfPPpuFQq-rkvQc27Yi7GmGJmy7y-LpbB7I59fEeITUN-3nsgjYhIIjCLdjn~NJ19BJnN-QFuOWZc7yC39izkbTYeia5LccZf8o3X6GTkjTUN3METoy5rSnINVgJbt8kmagShqxoodxvOblyp8mI7ZVUT5m0VBdL-a44le0WjHATwdooIT6GLOYAxeo-LDAHA0qTFKlSOBuBYECQoQTpxUC6nFiUNrI55-ssFd8hbgCKEQ2dfPoYRImJjJz5E~tPbGFHFU5PK91CKpvVwth~yjt6TPgUJo91SVYmDSoKTtLoARQYWDLT4w4Dzo82aIf-LjTe1tqGIxfUnsszlg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
+                        Configurações                        
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <h3 class="titulo">
+        <img src="https://s3-alpha-sig.figma.com/img/68e2/d011/f281a0f0b524119053e99abfa567b9f2?Expires=1658102400&Signature=dkwj9PDVxbKHwwRevYrHsKoCE7a1IF2g1WrvGU-MAeuf8~z9LMw4VHDfkmQeVOiBg-ziRR~bDEc-Yo2svd2yZ1sYsQFCZx-MMq1Q7IwiuGNJJKYC5bB3VsHvsLnSq-Kq~XzO5pKs6yvKhNdZap8rYHLZ~Tmw6CukqekTUZXFzMneNfyqCGSRkzHsOlndi6ujDf4Fd24sdXerwCve74rM3nDHUMkZJvIws9KFprqgWjthgYx4s06VlAhN51KEH6R4E3wbn68qcBOsdGDcRifJZbrk8mMaeqLMQgkimWEQPWmrSTv4ZFC23nqWimr0HJlZ22ovz6ENFHSMHHb884gYlw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
+        Cadastrar Alunos</h3>
+    <div class="content">
+        <div class="search">
+            <label for="search">
+                <img src="https://s3-alpha-sig.figma.com/img/790b/48e7/c16bef85a76e079a5d5979b025a039b0?Expires=1658102400&Signature=HzinF6iX8a98e1XJIgMBaWj533wHV3jl6PvSs01E8e8PGNJeMAqC-7e1-RV3iEfstk2yGj~gFHOC~7CNu3q2Hy5Nxybb9-vixvY6hatsP31soypzgJeDTJygY~sAmUdw97lFv6gPolCtZrJf7GHv3YjEakxUSqX7dMHg9O-9TTjjeR4-fh9EbqeS7Ai1znnf1-fLYLTObKBiz5X03SUnRfmhomNNTD8ugPOPT7z30CmLnj4dfukzKgdwQeIAHwtoa07RjMTkTRVoPbfOpTduH4pU4e2oHOrAx4X7eMJ3DK2vfV5tp3eUCEAxvfF6e1edVM03rYGQ~4s02abQOsFPOQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
+            </label>
+            <input type="search" value="Pesquisar Aluno" />  
+        </div>
+            
+        <div class="cad-aluno">
+            <form action="">
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" />
+                </p>
+                
+                <p>
+                    <label for="turma">Turma:</label>
+                    <input type="text" />
+                </p>
+
+                <p>
+                    <label for="matricula">Número de Matrícula:</label>
+                    <input type="number" />
+                </p>
+
+                <p>
+                    <label for="status">Status do Aluno:</label>
+                    <select name="status">
+                        <option value=""></option>
+                        <option value="ativo">Ativo</option>
+                        <option value="inativo">Inativo</option>
+                        <option value="concluido">Concluido</option>
+                    </select>
+                </p>
+
+                <p class="botao">
+                    <input type="submit" value="Cadastrar Aluno">
+                </p>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
