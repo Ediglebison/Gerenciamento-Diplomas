@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style/index.css">
+    <link rel="stylesheet" href="./assets/style/pesquisaAluno.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
@@ -28,7 +28,10 @@
 
         <div id="div-header-right">
             <div id="div-config">
-                <a href="./cadAluno.html">Cadastrar Alunos</a>
+            </div>
+            <div id="div-config">
+                <a class="linkHeader" href="./cadAluno.html">Cadastrar Alunos</a>
+                <a class="linkHeader">Configurações</a>
             </div>
         </div>
     </div>
@@ -39,48 +42,147 @@
 
     <!-- INÍCIO DE CONTEÚDO PRINCIPAL -->
     <div class="table">
-        <div class="header-table">
-            <h1>ALUNOS</h1>
-        </div>
 
         <div class="content-table">
-            <div class="row-table">
-                <div class="item-table">
-                    <label>NOME</label>
+            <div class="row-table row-pesquisa">
+                <div class="item-table divLabelAluno">
+                    <label class="labelAluno">Nome:</label>
                     <input type="text">
                 </div>
-                <div class="item-table">
-                    <label>TURMA</label>
+                <div class="item-table divLabelAluno">
+                    <label class="labelAluno">Turma:</label>
                     <input type="text">
                 </div>
-                <div class="item-table">
-                    <label>MATRÍCULA</label>
+                <div class="item-table divLabelAluno">
+                    <label class="labelAluno">Matrícula:</label>
                     <input type="text">
                 </div>
-                <div class="item-table">
-                    <label>STATUS</label>
+                <div class="item-table divLabelAluno">
+                    <label class="labelAluno">Status:</label>
                     <input type="text">
                 </div>
-                <div class="item-table right-button">
-                    <button>Pesquisar</button>
+                <div class="item-table divButton">
+                    <button class="buttonPesquisa">Pesquisar</button>
                 </div>
             </div>
 
 
             <div class="new-row-table">
-                <div class="row-table line-bottom">
-                    <div class="item-table">Nome</div>
-                    <div class="item-table">Turma</div>
-                    <div class="item-table">Matrícula</div>
-                    <div class="item-table">Status</div>
-                    <div class="item-table">Ações</div>
+                <div class="row-table row-item-table line-bottom">
+                    <div class="item-table">
+                        <label class="labelAluno">Nome</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">Turma</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">Matrícula</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">Status</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">Ações</label>
+                    </div>
                 </div>
-                <div class="row-table line-bottom">
-                    <div class="item-table">FOTO_E_NOME</div>
-                    <div class="item-table">Nº Turma</div>
-                    <div class="item-table">Nº Matrícula</div>
-                    <div class="item-table">Booleano</div>
-                    <div class="item-table">Pontos</div>
+
+
+                <div class="row-table row-item-table line-bottom">
+                    <div class="item-table nome-foto">
+                        <img class="foto-aluno" src="./assets/estudantes/caio.jpg" alt="">
+                        <label class="labelAluno">Caio Maia</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">02</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">0000000</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno status">Ativo</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">Ações</label>
+                    </div>
+                </div>
+
+
+                <div class="row-table row-item-table line-bottom">
+                    <div class="item-table nome-foto">
+                        <img class="foto-aluno" src="./assets/estudantes/binho.jpg" alt="">
+                        <label class="labelAluno">Ediglebison Sousa</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">02</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">0000000</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno status">Ativo</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">Ações</label>
+                    </div>
+                </div>
+
+
+                <div class="row-table row-item-table line-bottom">
+                    <div class="item-table nome-foto">
+                        <img class="foto-aluno" src="./assets/estudantes/eric.jpg" alt="">
+                        <label class="labelAluno">Eric Mescouto</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">02</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">0000000</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno status">Ativo</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">Ações</label>
+                    </div>
+                </div>
+
+
+                <div class="row-table row-item-table line-bottom">
+                    <div class="item-table nome-foto">
+                        <img class="foto-aluno" src="./assets/estudantes/ismar.jpg" alt="">
+                        <label class="labelAluno">Ismar Santos</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">02</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">0000000</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno status">Ativo</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">Ações</label>
+                    </div>
+                </div>
+
+                <div class="row-table row-item-table line-bottom">
+                    <div class="item-table nome-foto">
+                        <img class="foto-aluno" src="./assets/estudantes/lucas.jpg" alt="">
+                        <label class="labelAluno">Lucas Soares</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">02</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">0000000</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno status">Ativo</label>
+                    </div>
+                    <div class="item-table">
+                        <label class="labelAluno">Ações</label>
+                    </div>
                 </div>
             </div>
         </div>
