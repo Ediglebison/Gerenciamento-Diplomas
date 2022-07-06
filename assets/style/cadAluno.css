@@ -32,8 +32,8 @@
     text-align: center;
   
     overflow: overlay;
-  
-    background: linear-gradient(90.06deg, var(--bg-light), 28.29%, var(--primary-color));
+    background: white;
+    background-size: auto 30rem;
   }
   
   section header h4 {
@@ -171,6 +171,15 @@
     h3.titulo img {
         width: 3.2rem;
 
+    }
+    
+    .sub-header {
+      width: 140%;
+      height: 25rem;
+      background: linear-gradient(90.06deg, var(--bg-light), 28.29%, var(--primary-color));
+      z-index: -100;
+      position: fixed;
+      left: 0;
     }
 
     .content {
