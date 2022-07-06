@@ -226,6 +226,11 @@ img {
     align-self: center;
   }
 
+  #login .col-a img{
+    width: 52rem;
+    height: auto;
+  }
+
   #login .col-b {
     background-color: var(--primary-color);
     width: 34.6rem;
